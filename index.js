@@ -116,6 +116,8 @@ document.addEventListener("DOMContentLoaded", function () {
       lapTimerId = null;
 
       leftSideButton.innerText = "Lap";
+
+      leftSideButton.style.opacity = "30%";
     } else {
       // Lap Button
       if (lapTimerId) {
@@ -136,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
       rightSideButton.style.color = "white";
 
       leftSideButton.innerText = "Lap";
+      leftSideButton.style.opacity = "100%";
 
       if (laps.length === 0) {
         startLap();
